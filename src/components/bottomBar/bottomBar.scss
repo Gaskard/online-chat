@@ -1,0 +1,10 @@
+.bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  &__item {
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+  }
+}
