@@ -1,0 +1,51 @@
+.stories {
+  display: flex;
+
+  font-family: "Mulish", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+
+  &__add {
+    &-button {
+      display: flex;
+      width: 56px;
+      height: 56px;
+      flex-shrink: 0;
+      border-radius: 18px;
+      border: 2px solid #ADB5BD;
+      padding: 12px;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+  &__list {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    gap: 24px;
+    padding-left: 24px;
+    &-item {
+      img {
+        cursor: pointer;
+      }
+      display: flex;
+      flex-direction: column;
+      max-width: 48px;
+      max-height: 48px;
+      list-style: none;
+      align-items: center;
+
+      width: 56px;
+      height: 56px;
+      border-radius: 18px;
+      border: 2px solid #2C37E1;
+      padding: 2px;
+      &-name {
+        padding-top: 4px;
+      }
+    }
+  }
+}

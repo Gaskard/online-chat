@@ -1,4 +1,6 @@
 import './contactList.scss'
+import '../../styles/base.scss'
+
 import photo1 from './img/photo1.svg'
 import photo2 from './img/photo2.svg'
 import photo3 from './img/photo3.svg'
@@ -23,7 +25,7 @@ const ContactList = () => {
                             <div className="contacts__list-status">Online</div>
                         </div>
                     </li>
-                    <div className="contacts__list-divider"></div>
+                    <div className="divider"></div>
                     <li className="contacts__item">
                         <img src={photo2} alt="photo"/>
                         <div className="contacts__item-content">
@@ -31,7 +33,7 @@ const ContactList = () => {
                             <div className="contacts__list-status">Online</div>
                         </div>
                     </li>
-                    <div className="contacts__list-divider"></div>
+                    <div className="divider"></div>
                     <li className="contacts__item">
                         <img src={photo3} alt="photo"/>
                         <div className="contacts__item-content">
@@ -39,7 +41,7 @@ const ContactList = () => {
                             <div className="contacts__list-status">Online</div>
                         </div>
                     </li>
-                    <div className="contacts__list-divider"></div>
+                    <div className="divider"></div>
                     <li className="contacts__item">
                         <img src={photo4} alt="photo"/>
                         <div className="contacts__item-content">
@@ -47,7 +49,7 @@ const ContactList = () => {
                             <div className="contacts__list-status">Online</div>
                         </div>
                     </li>
-                    <div className="contacts__list-divider"></div>
+                    <div className="divider"></div>
                     <li className="contacts__item">
                         <img src={photo5} alt="photo"/>
                         <div className="contacts__item-content">
@@ -55,7 +57,7 @@ const ContactList = () => {
                             <div className="contacts__list-status">Online</div>
                         </div>
                     </li>
-                    <div className="contacts__list-divider"></div>
+                    <div className="divider"></div>
                     <li className="contacts__item">
                         <img src={photo6} alt="photo"/>
                         <div className="contacts__item-content">
@@ -63,7 +65,7 @@ const ContactList = () => {
                             <div className="contacts__list-status">Online</div>
                         </div>
                     </li>
-                    <div className="contacts__list-divider"></div>
+                    <div className="divider"></div>
                 </ul>
             </section>
         </div>

@@ -9,10 +9,13 @@
     font-size: 18px;
     line-height: 167%;
   }
-  &__plus-icon {
-    width: 14px;
-    height: 14px;
-    object-fit: contain;
+  &__icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    &-item {
+      cursor: pointer;
+    }
   }
 }
 
