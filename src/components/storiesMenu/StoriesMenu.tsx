@@ -5,6 +5,12 @@ import photo2 from '../contactList/img/photo2.svg'
 import storiesPlus from './icons/storiesPlus.svg'
 
 const StoriesMenu = () => {
+
+    const getShortName = (name: string): string => {
+        name = name.length > 9 ? name.slice(0, 9) + '...' : name
+        return name;
+    }
+
     return (
         <>
         <div className="container">
@@ -18,11 +24,11 @@ const StoriesMenu = () => {
                 <ul className="stories__list">
                     <li className="stories__list-item">
                         <img src={photo1} alt=""/>
-                        <div className="stories__list-item-name">Midala Huera</div>
+                        <span className="stories__list-item-name">{getShortName('Midala Huera')}</span>
                     </li>
                     <li className="stories__list-item">
                         <img src={photo2} alt=""/>
-                        <div className="stories__list-item-name">Salsabila Akira</div>
+                        <span className="stories__list-item-name">{getShortName('Salsabila Akira')}</span>
                     </li>
                 </ul>
             </div>

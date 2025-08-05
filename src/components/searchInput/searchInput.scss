@@ -1,0 +1,35 @@
+.search {
+  position: relative;
+  display: inline-block;
+
+
+  &__input {
+    font-family: "Mulish", sans-serif;
+    &::placeholder {
+      font-family: "Mulish", sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+      color: #ADB5BD;
+    }
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+
+    background: #F7F7FC url("./icons/search.svg") no-repeat 8px / 16px 16px;
+    padding-left: 40px;
+
+    border-radius: 4px;
+    width: 327px;
+    height: 36px;
+    border: none;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+  }
+}
