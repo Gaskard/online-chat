@@ -6,6 +6,7 @@ import TopBar from "../topBar/TopBar.tsx";
 import ContactList from "../contactList/ContactList.tsx";
 import BottomBar from "../bottomBar/BottomBar.tsx";
 import StoriesMenu from "../storiesMenu/StoriesMenu.tsx";
+import ChatsList from "../chatsList/ChatsList.tsx";
 
 
 function App() {
@@ -14,10 +15,21 @@ function App() {
 
     return (
         <div className="App">
-            <TopBar activeTab={activeTab}/>
-            <ContactList/>
-            <BottomBar setActiveTab={setActiveTab}/>
-            <StoriesMenu/>
+
+
+            {activeTab === 'contacts' ?
+                <>
+                <TopBar activeTab={activeTab}/>
+                <ContactList/>
+                <BottomBar setActiveTab={setActiveTab}/></> :
+                activeTab === 'chats' ?
+                <>
+                    <TopBar activeTab={activeTab}/>
+                    <StoriesMenu/>
+                    <ChatsList/>
+                    <BottomBar setActiveTab={setActiveTab}/>
+                </> : null}
+
         </div>
     )
 }
