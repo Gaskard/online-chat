@@ -23,8 +23,11 @@
     }
   }
   &__item {
+    background-color: white;
+    border: none;
     padding-top: 16px;
     display: flex;
+    text-align: start;
     &-content {
       display: flex;
       flex-direction: column;

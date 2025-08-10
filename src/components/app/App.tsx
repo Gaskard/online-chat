@@ -7,6 +7,9 @@ import ContactList from "../contactList/ContactList.tsx";
 import BottomBar from "../bottomBar/BottomBar.tsx";
 import StoriesMenu from "../storiesMenu/StoriesMenu.tsx";
 import ChatsList from "../chatsList/ChatsList.tsx";
+import OpenChatHeader from "../openChatHeader/OpenChatHeader.tsx";
+import OpenChatMessages from "../openChatMessages/OpenChatMessages.tsx";
+import OpenChatBottomMenu from "../openChatBottomMenu/OpenChatBottomMenu.tsx";
 
 
 function App() {
@@ -14,10 +17,8 @@ function App() {
     const [activeTab, setActiveTab] = useState<'contacts' | 'chats' | 'more'>('contacts');
 
     return (
-        <div className="App">
-
-
-            {activeTab === 'contacts' ?
+            <div className="App">
+                {activeTab === 'contacts' ?
                 <>
                 <TopBar activeTab={activeTab}/>
                 <ContactList/>
@@ -29,8 +30,10 @@ function App() {
                     <ChatsList/>
                     <BottomBar setActiveTab={setActiveTab}/>
                 </> : null}
-
-        </div>
+                <OpenChatHeader/>
+                <OpenChatMessages/>
+                <OpenChatBottomMenu/>
+            </div>
     )
 }
 

@@ -1,4 +1,5 @@
 import './storiesMenu.scss'
+import '../../styles/reset.scss'
 
 import photo1 from '../contactList/img/photo1.svg'
 import photo2 from '../contactList/img/photo2.svg'
@@ -22,13 +23,17 @@ const StoriesMenu = () => {
                     <div className="stories__add-text">Your Story</div>
                 </div>
                 <ul className="stories__list">
-                    <li className="stories__list-item">
-                        <img src={photo1} alt=""/>
-                        <span className="stories__list-item-name">{getShortName('Midala Huera')}</span>
+                    <li>
+                        <button className="stories__list-item">
+                            <img src={photo1} alt=""/>
+                            <span className="stories__list-item-name">{getShortName('Midala Huera')}</span>
+                        </button>
                     </li>
-                    <li className="stories__list-item">
-                        <img src={photo2} alt=""/>
-                        <span className="stories__list-item-name">{getShortName('Salsabila Akira')}</span>
+                    <li>
+                        <button className="stories__list-item">
+                            <img src={photo2} alt=""/>
+                            <span className="stories__list-item-name">{getShortName('Salsabila Akira')}</span>
+                        </button>
                     </li>
                 </ul>
             </div>

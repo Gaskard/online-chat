@@ -6,6 +6,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
+  text-align: center;
 
   &__add {
     &-button {
@@ -27,9 +28,13 @@
     justify-content: space-between;
     gap: 16px;
     padding-left: 16px;
+    list-style: none;
     &-item {
       img {
         cursor: pointer;
+        border-radius: 18px;
+        border: 2px solid #2C37E1;
+        padding: 2px;
       }
       display: flex;
       flex-direction: column;
@@ -40,9 +45,7 @@
 
       width: 56px;
       height: 56px;
-      border-radius: 18px;
-      border: 2px solid #2C37E1;
-      padding: 2px;
+
       &-name {
         white-space: nowrap;
         padding-top: 4px;

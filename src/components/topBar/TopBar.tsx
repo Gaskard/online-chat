@@ -12,13 +12,17 @@ type BarDataType = {
 const topBarData = {
     contacts: {
         label: 'Contacts',
-        icon: [<img className="header__icons-item" src={plusIcon} alt="" />]
+        icon: [<button className="header__icons-item" ><img src={plusIcon} alt="" /></button>]
     },
     chats: {
         label: 'Chats',
         icon: [
-            <img className="header__icons-item" src={newMessageIcon} alt=""/>,
-            <img className="header__icons-item" src={chatSelectIcon} alt=""/>
+            <button className="header__icons-item">
+                <img src={newMessageIcon} alt=""/>
+            </button>,
+            <button className="header__icons-item">
+                <img src={chatSelectIcon} alt=""/>
+            </button>
         ]
     },
     more: {

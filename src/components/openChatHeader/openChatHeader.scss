@@ -1,0 +1,28 @@
+.chat {
+  &__header {
+    display: flex;
+    &-left {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      &-name {
+        font-family: "Mulish", sans-serif;
+        padding-left: 8px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+      }
+    }
+    &-right {
+      align-items: center;
+      &-search {
+        padding-right: 8px;
+      }
+    }
+  }
+
+  &__area {
+    min-height: 639px;
+  }
+}

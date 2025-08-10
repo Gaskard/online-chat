@@ -10,6 +10,8 @@
   &__item {
     display: flex;
     align-items: flex-start;
+    width: 100%;
+    text-align: left;
     &-data {
       display: flex;
       flex: 1;
@@ -43,6 +45,7 @@
       line-height: 16px;
     }
     &-info {
+      text-align: start;
       padding-left: 16px;
     }
     &-meta {
