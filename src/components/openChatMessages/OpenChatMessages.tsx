@@ -5,9 +5,11 @@ import Message from "../message/Message.tsx";
 const OpenChatMessages = () => {
     return (
         <div className="container">
-            <ul className="chat-area">
-                <Message/>
-            </ul>
+                <ul className="chat-area">
+                    <Message/>
+                    <Message/>
+                    <Message/>
+                </ul>
         </div>
     )
 }

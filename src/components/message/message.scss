@@ -1,15 +1,17 @@
+
 .message {
   font-family: "Mulish", sans-serif;
   color: var(--Neutral-White, #FFF);
   display: inline-flex;
   padding: 10px;
   flex-direction: column;
-  align-items: flex-end;
   gap: 4px;
   border-radius: 16px 16px 0 16px;
   background: var(--Brand-Color-Default, #002DE3);
-  align-self: flex-end;
-  margin-left: auto;
+  align-items: flex-end;
+  align-content: flex-end;
+  max-width: 70%;
+  word-wrap: break-word;
   &__text {
     font-size: 14px;
     font-style: normal;
