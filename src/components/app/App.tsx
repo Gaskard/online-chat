@@ -1,7 +1,7 @@
 import './app.scss'
 import 'normalize.css'
 
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 import TopBar from "../topBar/TopBar.tsx";
 import ContactList from "../contactList/ContactList.tsx";
@@ -16,6 +16,15 @@ import OpenChatBottomMenu from "../openChatBottomMenu/OpenChatBottomMenu.tsx";
 function App() {
 
     const [activeTab, setActiveTab] = useState<'contacts' | 'chats' | 'more'>('contacts');
+
+    const ws: WebSocket = new WebSocket("ws://localhost:8080");
+
+    useEffect(() => {
+        ws.onopen = (e) => {
+            e.preventDefault();
+            console.log("WebSocket opened");
+        }
+    })
 
     return (
             <div className="App">
@@ -33,7 +42,7 @@ function App() {
                 </> : null}
                 <OpenChatHeader/>
                 <OpenChatMessages/>
-                <OpenChatBottomMenu/>
+                <OpenChatBottomMenu ws={ws}/>
             </div>
     )
 }
