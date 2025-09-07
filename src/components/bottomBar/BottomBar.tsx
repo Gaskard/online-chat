@@ -1,4 +1,5 @@
 import './bottomBar.scss'
+import {Link} from "react-router-dom";
 
 import contacts from './icons/contacts.svg'
 import chats from './icons/chats.svg'
@@ -14,15 +15,15 @@ const BottomBar = ({setActiveTab}: BottomBarProps) => {
     return (
         <div className="container">
             <nav className="bottom-nav">
-                <button onClick={() => setActiveTab('contacts')} className="bottom-nav__item">
+                <Link to='/contacts' onClick={() => setActiveTab('contacts')} className="bottom-nav__item">
                     <img src={contacts} alt="" className="bottom-nav__item-img"/>
-                </button>
-                <button onClick={() => setActiveTab('chats')} className="bottom-nav__item">
+                </Link>
+                <Link to='/chats' onClick={() => setActiveTab('chats')} className="bottom-nav__item">
                     <img src={chats} alt="" className="bottom-nav__item-img"/>
-                </button>
-                <button onClick={() => setActiveTab('more')} className="bottom-nav__item">
+                </Link>
+                <Link to='/more' onClick={() => setActiveTab('more')} className="bottom-nav__item">
                     <img src={more} alt="" className="bottom-nav__item-img"/>
-                </button>
+                </Link>
             </nav>
         </div>
     )

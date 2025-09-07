@@ -11,6 +11,7 @@ import ChatsList from "../chatsList/ChatsList.tsx";
 import OpenChatHeader from "../openChatHeader/OpenChatHeader.tsx";
 import OpenChatMessages from "../openChatMessages/OpenChatMessages.tsx";
 import OpenChatBottomMenu from "../openChatBottomMenu/OpenChatBottomMenu.tsx";
+import AppRoutes from "../appRoutes/AppRoutes.tsx";
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
                 <OpenChatHeader/>
                 <OpenChatMessages/>
                 <OpenChatBottomMenu/>
+                <AppRoutes activeTab={activeTab} setActiveTab={setActiveTab}/>
             </div>
     )
 }
