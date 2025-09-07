@@ -4,10 +4,9 @@ import '../../styles/base.scss'
 import plusIcon from './icons/plus.svg'
 import newMessageIcon from './icons/newMessage.svg'
 import chatSelectIcon from './icons/chatSelect.svg'
+import {useLocation} from "react-router-dom";
 
-type BarDataType = {
-    activeTab: 'contacts' | 'chats' | 'more',
-}
+type TabName = 'contacts' | 'chats' | 'more'
 
 const topBarData = {
     contacts: {
@@ -32,7 +31,11 @@ const topBarData = {
 }
 
 
-const TopBar = ({activeTab}: BarDataType) => {
+const TopBar = () => {
+    const location = useLocation()
+    const activeTab: TabName =
+        location.pathname.includes('contacts') ? 'contacts' :
+            location.pathname.includes('chats') ? 'chats' : 'more'
 
     const currentTab = topBarData[activeTab]
 
