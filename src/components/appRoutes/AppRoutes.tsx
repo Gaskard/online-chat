@@ -4,12 +4,14 @@ import ContactList from "../contactList/ContactList.tsx";
 import BottomBar from "../bottomBar/BottomBar.tsx";
 import StoriesMenu from "../storiesMenu/StoriesMenu.tsx";
 import ChatsList from "../chatsList/ChatsList.tsx";
+import WelcomeScreen from "../welcomeScreen/WelcomeScreen.tsx";
 
 
 const AppRoutes = () => {
     return (
         <Routes>
-            <Route path='/' element={<Navigate to='/contacts' replace/>}/>
+            <Route path="/" element={<Navigate to="/welcome" replace />} />
+            <Route path='/welcome' element={<WelcomeScreen />}/>
 
             <Route path='/contacts' element={
                 <>
