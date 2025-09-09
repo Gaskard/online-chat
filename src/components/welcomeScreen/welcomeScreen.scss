@@ -22,12 +22,10 @@
     }
   }
   &__start {
-    width: 327px;
     padding: 12px 48px;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10px;
     border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
     background: var(--Brand-Color-Default, #002DE3);
     color: var(--Neutral-Off-white, #F7F7FC);
     margin-top: 18px;
